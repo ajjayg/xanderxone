@@ -1,0 +1,4 @@
+// ADDING ROLES PERMISSIONS/PRIVILIGES FOR VISITOR API VIEW ON WEBADMIN
+INSERT INTO permissions(acc_code,id,code,category,url,created_by,created_on,last_updated_by,hidden,readonly) VALUES('####acc_code####',uuid(),'VISITOR_LIST', 'ADMINISTRATION','','migrations',totimestamp(now()),'migrations',false,false);
+INSERT INTO permissions(acc_code,id,code,category,url,created_by,created_on,last_updated_by,hidden,readonly) VALUES('####acc_code####',uuid(),'VISITOR_VIEW', 'ADMINISTRATION','','migrations',totimestamp(now()),'migrations',false,false);
+INSERT INTO role_permissions(acc_code,id,role_name,permission_code,created_by,created_on,last_updated_by) VALUES('####acc_code####',now(), 'account_admin' ,'VISITOR_LIST' ,'migrations',totimestamp(now()),'migrations');
